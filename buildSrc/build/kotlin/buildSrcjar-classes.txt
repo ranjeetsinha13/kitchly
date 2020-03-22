@@ -1,0 +1,1 @@
+/Users/r0s01ia/Downloads/personal_projects/kitchly/buildSrc/build/classes/kotlin/main/LibVersions.class

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/app_spacing_4x"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/meal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                tools:text="Meal Name" />
+
+            <ImageView
+                android:id="@+id/meal_image"
+                android:layout_width="@dimen/app_image_size"
+                android:layout_height="@dimen/app_image_size"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/meal_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:text="@string/meal_type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="meal Area" />
+
+            <TextView
+                android:id="@+id/meal_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:text="@string/meal_labels"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="meal tags" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_divider_size"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:background="@color/colorPrimaryDark" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/meal_ingredients_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_divider_size"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/meal_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:text="@string/meal_labels"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="meal tags" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_divider_size"
+                android:layout_marginTop="@dimen/app_spacing_4x"
+                android:background="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/error_state"
+            layout="@layout/error_view"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/loading_state"
+            layout="@layout/progress_bar"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</ScrollView>

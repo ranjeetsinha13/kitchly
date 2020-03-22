@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kitchly</string>
+
+    <string name="search_meal">Search</string>
+    <string name="browse_meal_cateegory">Catgories</string>
+    <string name="random_meal">Random</string>
+    <string name="meal_type">Meal Type: %1$s</string>
+    <string name="meal_labels">Tags: %1$s</string>
+    <string name="meal_instructions">Instructions: %1$s</string>
+
+
+</resources>

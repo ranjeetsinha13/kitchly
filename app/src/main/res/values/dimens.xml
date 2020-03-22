@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_spacing_4x">16dp</dimen>
+    <dimen name="app_image_size">250dp</dimen>
+    <dimen name="app_spacing_1x">4dp</dimen>
+
+    <dimen name="app_divider_size">1dp</dimen>
+</resources>
